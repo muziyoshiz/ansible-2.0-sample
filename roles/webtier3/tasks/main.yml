@@ -1,0 +1,4 @@
+- name: Install common software
+  command: echo "Common software for web servers is installed." 
+- name: Install our web application
+  include: application.yml
