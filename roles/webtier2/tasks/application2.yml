@@ -1,0 +1,4 @@
+- name: Install our web application 2
+  command: echo "Web application 2 is installed." 
+  notify:
+    - Restart web application

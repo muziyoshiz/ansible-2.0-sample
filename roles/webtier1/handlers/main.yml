@@ -1,0 +1,2 @@
+- name: Restart web application
+  command: echo "Web application is restarted." 
