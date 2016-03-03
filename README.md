@@ -38,7 +38,7 @@ The following table shows the results.
 | Ansible 1.9.4 & playbook3.yml | [application1, application2] | ok                  | ok                      |
 | Ansible 2.0.1 & playbook1.yml | []                           | ok                  | ok                      |
 | Ansible 2.0.1 & playbook2.yml | [application1, application2] | ok                  | ok                      |
-| Ansible 2.0.1 & playbook3.yml | []                           | handler was ignored | handler was ignored     |
+| Ansible 2.0.1 & playbook3.yml | []                           | handler was silently ignored | handler was silently ignored     |
 
 The tags on individual tasks in the included file were not ignored when running tasks. On the other hand, the handlers in the included file were silently ignored.
 
