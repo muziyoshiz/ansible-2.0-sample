@@ -2,7 +2,7 @@
 
 ## Overview
 
-In blog post [Ansible 2.0 Has Arrived](https://www.ansible.com/blog/ansible-2.0-launch), following two problems with Ansible 2.0 were shown. This repository provides sample playbooks for confirming these problems.
+In [Ansible 2.0 Has Arrived](https://www.ansible.com/blog/ansible-2.0-launch), following two problems with Ansible 2.0 were shown. This repository provides sample playbooks for confirming these problems.
 
 * Dynamic Include Problems
     * Tags on tasks are not seen until the include is processed, so tags should now be specified on the include task rather than on individual tasks within the include, otherwise they will not be seen. Likewise, the --list-tags option will not show tags contained only in the include files.
