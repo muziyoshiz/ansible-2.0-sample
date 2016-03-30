@@ -18,7 +18,7 @@ In [Ansible 2.0 Has Arrived](https://www.ansible.com/blog/ansible-2.0-launch), f
 | playbook2.yml | on individual tasks in included files | in handlers/main.yml        |
 | playbook3.yml | on include task in tasks/main.yml     | in included file            |
 
-NOTICE: playbook4.yml, inventory_true, inventory_false and inventory_null are files for an another experiment.
+NOTICE: playbook4.yml, inventory_true, inventory_false and inventory_null are files for an another experiment. Please ignore them.
 
 ## Results
 
