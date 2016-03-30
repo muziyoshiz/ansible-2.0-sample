@@ -1,0 +1,89 @@
+- debug: msg="is-defined"
+  when: var1 is defined
+
+- debug: msg="variable-only"
+  when: var1
+
+- debug: msg="variable-only | bool"
+  when: "{{ var1 | bool }}"
+
+- debug: msg="equals-true"
+  when: var1 == true
+
+- debug: msg="equals-true-string"
+  when: var1 == "true"
+
+- debug: msg="equals-false"
+  when: var1 == false
+
+- debug: msg="equals-false-string"
+  when: var1 == "false"
+
+- debug: msg="is-defined and variable-only"
+  when: var1 is defined and var1
+
+- debug: msg="(is-defined) and variable-only"
+  when: (var1 is defined) and var1
+
+- debug: msg="is-defined and variable-only | bool"
+  when: var1 is defined and {{ var1 | bool }}
+
+- debug: msg="is-defined and equals-true"
+  when: var1 is defined and var1 == true
+
+- debug: msg="is-defined and equals-true-string"
+  when: var1 is defined and var1 == "true"
+
+- debug: msg="is-defined and equals-false"
+  when: var1 is defined and var1 == false
+
+- debug: msg="is-defined and equals-false-string"
+  when: var1 is defined and var1 == "false"
+
+- debug: msg="is-defined, variable-only"
+  when: var1 is defined
+  when: var1
+
+- debug: msg="is-defined, variable-only | bool"
+  when: var1 is defined
+  when: "{{ var1 | bool }}"
+
+- debug: msg="is-defined, equals-true"
+  when: var1 is defined
+  when: var1 == true
+
+- debug: msg="is-defined, equals-true-string"
+  when: var1 is defined
+  when: var1 == "true"
+
+- debug: msg="is-defined, equals-false"
+  when: var1 is defined
+  when: var1 == false
+
+- debug: msg="is-defined, equals-false-string"
+  when: var1 is defined
+  when: var1 == "false"
+
+- debug: msg="variable-only, is-defined"
+  when: var1
+  when: var1 is defined
+
+- debug: msg="variable-only | bool, is-defined"
+  when: "{{ var1 | bool }}"
+  when: var1 is defined
+
+- debug: msg="equals-true, is-defined"
+  when: var1 == true
+  when: var1 is defined
+
+- debug: msg="equals-true-string, is-defined"
+  when: var1 == "true"
+  when: var1 is defined
+
+- debug: msg="equals-false, is-defined"
+  when: var1 == false
+  when: var1 is defined
+
+- debug: msg="equals-false-string, is-defined"
+  when: var1 == "false"
+  when: var1 is defined
